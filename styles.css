@@ -1,0 +1,18 @@
+body{
+    background-color: lightblue;
+    color: black;
+}
+
+.center {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    border: solid 2px green; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+
+.container{
+    background-color: orange;
+    border: solid 2px black;
+}
