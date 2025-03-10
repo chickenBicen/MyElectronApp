@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "keywords": [],
   "author": "",
@@ -12,10 +13,27 @@
   "type": "commonjs",
   "devDependencies": {
     "electron": "^35.0.0",
-    "parcel":"2.13.3"
+    "electron-packager": "^17.1.2",
+    "parcel": "2.13.3"
   },
   "dependencies": {
     "@cubejs-client/core": "^0.31.0",
     "chart.js": "^4.0.0"
+  },
+  "build": {
+    "appId": "com.example.myapp",
+    "productName": "MyApp",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis" 
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
   }
 }

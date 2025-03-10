@@ -1,1 +1,47 @@
+# Node modules (unless needed for deployment)
 node_modules/
+npm-debug.log
+yarn-error.log
+
+# Output folders (where the packaged app is built)
+dist/
+out/
+release/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Electron cache and dependencies
+.cache/
+electron-builder-cache/
+electron-packager-cache/
+
+# Compiled files
+*.asar
+*.o
+*.obj
+*.dll
+*.exe
+*.app
+*.dmg
+
+# If using TypeScript or Webpack
+*.tsbuildinfo
+build/
+
+# If using SCSS or LESS
+*.css.map
+*.scssc
+*.sassc
+*.lessc
+
+# If using Electron Forge
+forge.config.js
+
+# If using dotenv for environment variables
+.env

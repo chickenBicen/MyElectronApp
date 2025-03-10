@@ -10,6 +10,7 @@ app.whenReady().then(() => {
     webPreferences: {
       nodeIntegration: true,
     },
+    icon: "assets/icon.ico",
   });
 
   mainWindow.loadFile("mainScreen.html");
