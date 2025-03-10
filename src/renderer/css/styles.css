@@ -75,7 +75,17 @@ body {
 
 .settings-button{
   margin: 20px 0 0 20px;
-  width: 20px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  border: none;
+  background-color: red;
+}
+
+.setting-button-icon{
+  width: 40px;
+  height: 40px;
+  
 }
 
 .exit-button{
