@@ -1,5 +1,5 @@
 function navToCalc() {
-  window.location.href = "CalculatorPage.html";
+  window.location.href = "src/renderer/CalculatorPage.html";
 }
 function navToClock() {
   return;
