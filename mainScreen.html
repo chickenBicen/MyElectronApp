@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Electron App</title>
     <!--styles-->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="src/renderer/css/styles.css" />
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -130,14 +130,17 @@
       </div>
     </div>
 
+    <div id="setting-content"></div>
+
     <div id="mainContent" class="mainContent">
       <div class="center" id="centerContainer">
         <div class="container">
+          <button id="settings-button" class="settings-button"></button>
           <div class="header">
             <h1>Select an Option</h1>
           </div>
           <div class="button-container">
-            <button onclick="navigateToCalc()">Button 1</button>
+            <button onclick="navToCalc()">Calculator</button>
             <button>Button 2</button>
             <button>Button 3</button>
             <button>Button 4</button>
@@ -146,6 +149,7 @@
       </div>
     </div>
 
-    <script src="mainScreen.js"></script>
+    <script src="../main/loading.js"></script>
+    <script src="../main/mainScreen.js"></script>
   </body>
 </html>

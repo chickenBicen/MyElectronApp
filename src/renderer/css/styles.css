@@ -8,7 +8,7 @@ body {
 
 .mainContent{
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 2s;
 }
 
 .center {
@@ -17,6 +17,7 @@ body {
   align-items: center;
   height: calc(100vh - 20px); /* Subtracts the margin */
   margin: 10px; /* Adds space around the div */
+  border: #459fa5;
 }
 
 .container {
@@ -72,11 +73,27 @@ body {
   transform: scale(1.08);
 }
 
+.settings-button{
+  margin: 20px 0 0 20px;
+  width: 20px;
+}
+
+.exit-button{
+  background-color: red;
+  margin: 20px 0 0 20px;
+  border-radius: 5vh;
+}
+
+/*
+css for loading screen past this until 923
+*/
+
 .loading-container {
   display: block;
   height: 300px;
   width: 300px;
   margin: 0 auto;
+  transition: opacity 2s;
 }
 
 .baton {
@@ -916,4 +933,6 @@ body {
   }
 }
 
-/*# sourceMappingURL=loading.css.map */
+/*
+loading screen css end here
+*/

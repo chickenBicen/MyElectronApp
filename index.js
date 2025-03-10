@@ -12,7 +12,7 @@ app.whenReady().then(() => {
     },
   });
 
-  mainWindow.loadFile("index.html");
+  mainWindow.loadFile("mainScreen.html");
 
   mainWindow.setMenuBarVisibility(false);
 

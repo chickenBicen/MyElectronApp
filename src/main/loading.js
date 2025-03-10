@@ -4,9 +4,5 @@ window.onload = function () {
   setTimeout(function () {
     document.getElementById("loadingScreen").style.display = "none"; // Hide loading screen
     document.getElementById("mainContent").style.opacity = 1; // Show main content
-  }, 5000); // 3 seconds for demo, adjust as needed
+  }, 1000); // 3 seconds for demo, adjust as needed
 };
-
-function navigateToCalc() {
-  window.location.href = "CalculatorPage.html";
-}
