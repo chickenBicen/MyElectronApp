@@ -1,66 +1,72 @@
 body{
-    background-color: lightblue;
+  background-color: lightblue;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.header {
+  
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  flex-shrink: 0; /* Prevents the header from shrinking */
+}
+
+
+.exit-button{
+  background-color: red;
+  width: 100px;
+  height: 60px;
+  margin: 20px 0 0 20px;
+  border-radius: 5vh;
 }
 
 .container {
-    margin: 10px;
-    width: 100vw;
-    height: calc(100vh - 40px);
-    background-color: orange;
-    border: solid 3px black;
-    border-radius: 5vh;
-    text-align: center;
-    align-items: start;
-    padding: 0;
-    display: flex;
-    flex-direction: column; /* Ensure buttons are aligned vertically */
-  }
-  
-  .header {
-    font-family: "Space Grotesk", sans-serif;
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
-    font-size: 40px;
-    font-style: normal;
-    flex-shrink: 0; /* Prevents the header from shrinking */
-  }
-  
-  .button-container {
-    display: flex;
-    flex-direction: column; /* Align items vertically */
-    gap: 20px; /* Space between buttons */
-    flex-grow: 1; /* Let the button container grow to fill available space */
-    justify-content: space-between;
-    margin: 0 20px 20px;
-  }
-  
-  .button-container button {
-    padding: 20px 20px;
-    font-size: 16px;
-    flex-grow: 1;
-    border-radius: 5vh;
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 700;
-    font-size: large;
-    transition: 0.25s;
-    border: solid 3px;
-  }
-  
-  .button-container button:hover {
-    transform: scale(1.15);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
-  }
-  
-  .button-container button:active {
-    transform: scale(1.08);
-  }
-  
-  
-  .exit-button{
-    background-color: red;
-    width: 60px;
-    height: 80px;
-    margin: 20px 0 0 20px;
-    border-radius: 5vh;
-  }
+  margin: 10px;
+  width: calc(100% - 20px); /* Adjusted width to take into account outer margin */
+  height: calc(100vh - 40px); /* Adjusted height */
+  background-color: orange;
+  border: solid 3px black;
+  border-radius: 5vh;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+}
+
+.result{
+  background-color: rgb(216, 216, 216); /* Makes the div white */
+  width: calc(100% - 40px); /* Full width minus 10px margin on each side */
+  height: 10fr; /* Set a height for the div */
+  margin: 10px 20px; /* Center the div */
+  padding: 20px; /* Padding inside the div */
+  border-radius: 5vh; /* Rounded corners */
+  text-align: right; /* Align text to the right */
+  box-sizing: border-box; /* Ensures padding is included in width/height calculations */
+  font-size: 30px;
+  overflow: auto;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: repeat(4, 100px); /* 4 equal rows with a height of 100px */
+  gap: 10px; /* Space between the grid items */
+  width: 450px; /* Container width */
+  height: 450px; /* Container height */
+  margin: 20px auto; /* Center the grid */
+  transition: 1s;
+}
+
+.grid-item {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5vh;
+  transition: 1s;
+}

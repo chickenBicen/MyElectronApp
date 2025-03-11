@@ -1,9 +1,7 @@
 const { app, BrowserWindow } = require("electron");
 
-let mainWindow;
-
 app.whenReady().then(() => {
-  mainWindow = new BrowserWindow({
+  let mainWindow = new BrowserWindow({
     width: 600,
     height: 800,
     resizable: false,

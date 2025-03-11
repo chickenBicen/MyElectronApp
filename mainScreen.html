@@ -6,6 +6,7 @@
     <title>My Electron App</title>
     <!--styles-->
     <link rel="stylesheet" href="src/renderer/css/styles.css" />
+    <link rel="stylesheet" href="src/renderer/css/loadingScreen.css" />
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -130,8 +131,6 @@
       </div>
     </div>
 
-    <div id="setting-content"></div>
-
     <div id="mainContent" class="mainContent">
       <div class="center" id="centerContainer">
         <div class="container">
@@ -142,9 +141,19 @@
             <button onclick="navToCalc()">Calculator</button>
             <button>Button 2</button>
             <button>Button 3</button>
-            <button>Settings</button>
+            <button id="sett-but">Settings</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div id="settings-content">
+      <div class="settings-container">
+        <h2>Settings</h2>
+        <p>Settings content goes here.</p>
+        <button id="close-settings" onclick="closeSettings()">
+          Close Settings
+        </button>
       </div>
     </div>
 
