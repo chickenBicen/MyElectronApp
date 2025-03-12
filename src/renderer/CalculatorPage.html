@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="./css/calcStyles.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="./css/loadingScreen.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+
   <style></style>
   <title>Document</title>
 </head>
@@ -201,17 +206,27 @@
     <div class="center">
       <div class="container">
         <button id="exit-button" class="exit-button"></button>
-        <input type="text" class="result" id="result" />
+        <input type="text" class="result" id="result" disable />
         <div class="grid-container">
           <button id="calc-button1" class="grid-item" onclick="add(1)">1</button>
           <button id="calc-button2" class="grid-item" onclick="add(2)">2</button>
           <button id="calc-button3" class="grid-item" onclick="add(3)">3</button>
-          <button id="calc-button4" class="grid-item" onclick="add('=')">=</button>
+          <button id="calc-button4" class="grid-item" onclick="solve()">=</button>
+          <button id="calc-button3" class="grid-item" onclick="add(4)">4</button>
           <button id="calc-button5" class="grid-item" onclick="add(5)">5</button>
           <button id="calc-button6" class="grid-item" onclick="add(6)">6</button>
+          <button id="calc-button7" class="grid-item" onclick="add('*')">*</button>
           <button id="calc-button7" class="grid-item" onclick="add(7)">7</button>
           <button id="calc-button8" class="grid-item" onclick="add(8)">8</button>
           <button id="calc-button9" class="grid-item" onclick="add(9)">9</button>
+          <button id="calc-button7" class="grid-item" onclick="add('/')">/</button>
+          <button id="calc-button7" class="grid-item" onclick="add('.')">.</button>
+          <button id="calc-button7" class="grid-item" onclick="add(0)">0</button>
+          <button id="calc-button7" class="grid-item" onclick="add('-')">-</button>
+          <button id="calc-button7" class="grid-item" onclick="add('+')">+</button>
+          <button id="calc-button7" class="grid-item" onclick="add('(')">(</button>
+          <button id="calc-button7" class="grid-item" onclick="add(')')">)</button>
+          <button id="calc-button7" class="grid-item" onclick="clear()">clear</button>
         </div>
       </div>
     </div>
