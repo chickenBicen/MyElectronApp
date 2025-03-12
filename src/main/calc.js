@@ -33,7 +33,7 @@ function clear() {
 
 class Solver {
   constructor(expression) {
-    this.ex = expression.split(' ');
+    this.ex = expression.split(' ').map(e => e.trim());
   }
 
   solveExpression() {
@@ -84,9 +84,10 @@ class Solver {
       "-": (a, b) => a - b
     };
 
-    for (let i = 0; i < this.ex.length; i++) {
+    let i = 0;
+    while (i < this.ex.length) {
+      // Check for an operator in the provided ops list
       if (ops.includes(this.ex[i])) {
-        // Make sure operands are valid numbers before applying the operation
         let operand1 = parseFloat(this.ex[i - 1]);
         let operand2 = parseFloat(this.ex[i + 1]);
 
@@ -95,9 +96,14 @@ class Solver {
           return;
         }
 
+        // Perform the operation
         let result = operators[this.ex[i]](operand1, operand2);
         this.ex.splice(i - 1, 3, result.toString());
-        i--; // Adjust index after modification
+
+        // After modifying the array, we step back to recheck the new element at index i-1
+        i--; 
+      } else {
+        i++; // If not an operator, just move to the next element
       }
     }
   }
